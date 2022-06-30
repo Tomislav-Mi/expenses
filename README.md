@@ -16,6 +16,6 @@
     para.textContent = 'This is a paragraph';
     document.getElementById('someid').append(para);
     ```
-    With React, developer define the desired target state. React then figures out the actual JavaScript DOM insturctions.
+    With React, developer define the desired target state. React then figures out the actual JavaScript DOM instructions.
 - JavaScript ...
 TO BE CONTINUED ...
