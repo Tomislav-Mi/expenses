@@ -30,4 +30,8 @@
 - JavaScript ...
 TO BE CONTINUED ...
 
+## What's on the agenda 
+- Alternatives files structures
+- Custom Hooks
+- Rooting etc
 
