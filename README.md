@@ -17,7 +17,7 @@
     para.textContent = 'This is a paragraph';
     document.getElementById('someid').append(para);
     ```
-    With React, developer define the desired target state. React then figures out the actual JavaScript DOM instructions. You essentially build your custom HTML Elements, using JavaScript - and a special React syntax called JSX, that looks like the love child of JavaScript and HTML.
+    With React, developer define the desired target state. React then figures out the actual JavaScript DOM instructions. You essentially build your custom HTML Elements with JavaScript and a special React syntax called JSX, that looks like the love child of JavaScript and HTML.
     
 <details><summary>Origin of JSX</summary>
 <p>
