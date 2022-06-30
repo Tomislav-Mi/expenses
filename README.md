@@ -2,7 +2,7 @@
 - App that tracks expenses
 
 ## Key Features
-- Track expenses
+- Tracks expenses
 - User can add new expenses
 - Expenses are filtered by year, and displayed by month using a bar chart
 
