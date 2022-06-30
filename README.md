@@ -1,5 +1,5 @@
 # Expensify (React study project # 1)
-- App that tracks expenses
+- Web app that tracks expenses
 
 ## Key Features
 - Tracks expenses
