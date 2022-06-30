@@ -10,14 +10,14 @@
 - React
   - Structure
   - Components </br>
-    React uses a declarative approach for building the components. In plain JavaScript, you write the concrete DOM updating instructions
+    In plain JavaScript, you write the concrete DOM updating instructions
     on your own. For example:
     ```javascript
     const para = document.createElement('p');
     para.textContent = 'This is a paragraph';
     document.getElementById('someid').append(para);
     ```
-    With React, developer define the desired target state. React then figures out the actual JavaScript DOM instructions. You essentially build your custom HTML Elements with JavaScript and a special React syntax called JSX, that looks like the love child of JavaScript and HTML.
+    React favours a declarative approach for building the components: Developer define the desired target state, and React then figures out the actual JavaScript DOM instructions. You essentially build your custom HTML Elements with JavaScript and a special React syntax called JSX, that looks like the love child of JavaScript and HTML.
     
 <details><summary>Origin of JSX</summary>
 <p>
