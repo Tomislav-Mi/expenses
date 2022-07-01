@@ -44,7 +44,7 @@
         );
       }
     ```
-    You probably noticed that we assigned a value to this click event, `{clickHandler}`. That's a pointer to a function that we can declare inside the component *before* we return the function:
+    You probably noticed that we assigned a value to this click event, `{clickHandler}`. That's a pointer to a function that we can declare inside the component *before* the function is returned:
      ```javascript
     const Button = () => {
       let para = 'Paragraph';
