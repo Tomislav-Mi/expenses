@@ -10,7 +10,7 @@
 - React
   - Structure
   - Components </br>
-    All UI can be slip into components. A Button, for instance, can be a component, an input element as well, same goes for filters, and containers, and other pieces of UI. React is all about these components. </br> But what are React components in code? Components are, in-essence, JavaScript functions (or classes) combined with HTML and CSS.
+    All UI can be split into components. A Button, for instance, can be a component, an input element as well, same goes for filters, and containers, and other pieces of UI. React is all about these components. </br> But what are React components in code? Components are, in-essence, JavaScript functions (or classes) combined with HTML and CSS.
     Before we dive deeper into React components, let's take a quick look at good old vanilla JavaScript. In pure JS (no library or framework attached), you write the concrete DOM updating instructions
     on your own. For example:
     ```javascript
