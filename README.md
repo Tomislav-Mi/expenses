@@ -8,7 +8,6 @@
 
 ## What I've learned
 - React
-  - Structure
   - Components </br>
     All UI can be split into components. A Button, for instance, can be a component, an input element as well, same goes for filters, and containers, and other pieces of UI. React is all about these components. </br> But what are React components in code? Components are, in-essence, JavaScript functions (or classes) combined with HTML and CSS.
     Before we dive deeper into React components, let's take a quick look at good old vanilla JavaScript. In pure JS (no library or framework attached), you write the concrete DOM updating instructions
@@ -18,7 +17,7 @@
     para.textContent = 'This is a paragraph';
     document.getElementById('someid').append(para);
     ```
-    React favours a declarative approach for building the components: Developer define the desired target state, and React then figures out the actual JavaScript DOM instructions. You essentially build your custom HTML Elements with JavaScript and a special React syntax called JSX that looks like the love child of JavaScript and HTML. To render a paragraph in React, you `return` HTML code inside of a function or class. This only works because there are transformation steps running behind the scenes.[^1]
+    React favours a declarative approach for building the components: Developer define the desired target state, and React then figures out the actual JavaScript DOM instructions. You essentially build your custom HTML Elements with JavaScript and a special React syntax called JSX that looks like the love child of JavaScript and HTML. To render a paragraph in React, you `return` HTML code inside of a function or class. This only works because there are transformation steps running behind the scenes. Here's a React component:[^1]
     ```javascript
     const Para = () => {
       return (
@@ -28,7 +27,8 @@
         );
      }
     ```
-    
+  - Event Listening, React State, useState()</br>
+    To react to events in React (no pun intended), we go to the JSX element, for instance `<button>Click!</button>`, and there we add a special prop which start with `on`, for example `onClick`.
 <details><summary>The origin of JSX</summary>
 <p>
   
@@ -37,8 +37,8 @@
 </p>
 </details>
 
-- JavaScript ...
-TO BE CONTINUED ...
+
+
 
 ## What I need to learn
 - Alternatives files structures
