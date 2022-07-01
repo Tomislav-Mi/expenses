@@ -95,8 +95,14 @@
         </div>
         );
      }
-    
-    
+    ```
+   - Other concepts I've learned
+     - Rendering list of data
+     - Using stateful lists
+     - Using "keys" and why React needs them
+     - Conditional return statements
+     - Dynamic styles
+      
 <details><summary>The origin of JSX</summary>
 <p>
   
@@ -111,6 +117,9 @@
 ## What I need to learn
 - Alternatives files structures
 - Custom Hooks
-- Rooting etc
+- Rooting
+- Redux
+- Unit tests
+- TypeScript (sorry, JS)
 
 [^1]: If you want to, you can see the code that was transformed into pure JS. Open the dev tools > sources > static/js > bunch of js files.
