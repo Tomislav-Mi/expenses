@@ -79,7 +79,7 @@
         );
      }
     ```
-    **BUT THAT _WON'T_ WORK!** Don't get me wrong, the variable will receive a new value but React won't render it onto the screen. To show the new value, we need to declare a state variable by calling `useState()`, a special React function. As a last step, we need to call `setPara()` with a new value inside, i.e. `setPara('NEW VALUE')`. The call must, of course, occur in `clickHandler()`.
+    **BUT THAT _WON'T_ WORK!** Don't get me wrong, the variable will receive a new value but React won't render it onto the screen. To show the new value, we need to save the state of the new value we assigned to the variable. `useState()` makes this possible, a special React function. First, we declare a state variable by calling `useState()`. Then, we need to call `setPara()` with a new value inside, i. e. `setPara('NEW VALUE')`. The call must, of course, occur in `clickHandler()`.
      ```javascript
     const Button = () => {
       const [para, setPara] = useState('Paragraph');
