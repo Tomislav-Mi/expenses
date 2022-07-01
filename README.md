@@ -20,39 +20,48 @@
     React favours a declarative approach for building the components: Developer define the desired target state, and React then figures out the actual JavaScript DOM instructions. You essentially build your custom HTML Elements with JavaScript and a special React syntax called JSX that looks like the love child of JavaScript and HTML. To render a paragraph in React, you `return` HTML code inside of a function or class. This only works because there are transformation steps running behind the scenes. Here's a React component:[^1]
     ```javascript
     const Para = () => {
+      let para = 'This is a paragraph';
+      
       return (
         <div>
-          <p>This is a paragraph</p>
+          <p>{para}</p>
         </div>
         );
      }
     ```
-  - Event Listening, React State, useState()</br>
+    </br>
+  - Event Listening, React State, useState( )</br>
     To react to events in React (no pun intended), we go to the JSX element, for instance</br> `<button>Click!</button>`, and there we add a special prop which start with `on`, for example `onClick`:
      ```javascript
     const Button = () => {
-    return (
-      <div>
-        <button onClick={clickHandler}>Click!</button>
-      </div>
-      );
-    }
+      let para = 'This is a paragraph';
+      
+      return (
+        <div>
+          <p>{para}</p>
+          <button onClick={clickHandler}>Click!</button>
+        </div>
+        );
+      }
     ```
     You probably noticed that we assigned a value to this click event, `{clickHandler}`. That's a pointer to a function that we can declare inside the component:
      ```javascript
     const Button = () => {
-    const clickHandler = () => {
-       return (
-        console.log(
-       );
-    } 
-    return (
-      <div>
-        <button onClick={clickHandler}>Click!</button>
-      </div>
-      );
-    }
+      let para = 'Paragraph';
+      
+      const clickHandler = () => {
+        return (console.log('Clicked!');
+       } 
+    
+      return (
+        <div>
+          <p>{para}</p>
+          <button onClick={clickHandler}>Click!</button>
+        </div>
+        );
+     }
     ```
+    Now we can react to events.
  
 <details><summary>The origin of JSX</summary>
 <p>
