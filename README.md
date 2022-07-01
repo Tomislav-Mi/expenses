@@ -7,7 +7,7 @@
 - Expenses are filtered by year, and displayed by month using a bar chart
 
 ## What I've learned
-- React
+- React</br>
   - Components </br>
     All UI can be split into components. A Button, for instance, can be a component, an input element as well, same goes for filters, and containers, and other pieces of UI. React is all about these components. </br> But what are React components in code? Components are, in-essence, JavaScript functions (or classes) combined with HTML and CSS.
     Before we dive deeper into React components, let's take a quick look at good old vanilla JavaScript. In pure JS (no library or framework attached), you write the concrete DOM updating instructions
@@ -28,9 +28,24 @@
      }
     ```
   - Event Listening, React State, useState()</br>
-    To react to events in React (no pun intended), we go to the JSX element, for instance `<button>Click!</button>`, and there we add a special prop which start with `on`, for example `onClick`:
+    To react to events in React (no pun intended), we go to the JSX element, for instance</br> `<button>Click!</button>`, and there we add a special prop which start with `on`, for example `onClick`:
      ```javascript
     const Button = () => {
+    return (
+      <div>
+        <button onClick={clickHandler}>Click!</button>
+      </div>
+      );
+    }
+    ```
+    You probably noticed that we assigned a value to this click event, `{clickHandler}`. That's a pointer to a function that we can declare inside the component:
+     ```javascript
+    const Button = () => {
+    const clickHandler = () => {
+       return (
+        console.log(
+       );
+    } 
     return (
       <div>
         <button onClick={clickHandler}>Click!</button>
