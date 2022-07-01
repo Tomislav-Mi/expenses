@@ -18,7 +18,16 @@
     para.textContent = 'This is a paragraph';
     document.getElementById('someid').append(para);
     ```
-    React favours a declarative approach for building the components: Developer define the desired target state, and React then figures out the actual JavaScript DOM instructions. You essentially build your custom HTML Elements with JavaScript and a special React syntax called JSX, that looks like the love child of JavaScript and HTML.
+    React favours a declarative approach for building the components: Developer define the desired target state, and React then figures out the actual JavaScript DOM instructions. You essentially build your custom HTML Elements with JavaScript and a special React syntax called JSX, that looks like the love child of JavaScript and HTML. To render a paragraph in React, you `return` HTML code inside of a function or class. This only works because there are transformation steps running behind the scenes.[^1]
+    ```javascript
+    const Para = () => {
+      return (
+        <div>
+          <p>This is a paragraph</p>
+        </div>
+        );
+     }
+    ```
     
 <details><summary>The origin of JSX</summary>
 <p>
@@ -31,8 +40,9 @@
 - JavaScript ...
 TO BE CONTINUED ...
 
-## What's on the agenda 
+## What I need to learn
 - Alternatives files structures
 - Custom Hooks
 - Rooting etc
 
+[^1]: You can see the transformed code if you want to. Open the dev tools > sources > static/js > bunch of js files.
