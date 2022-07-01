@@ -62,7 +62,7 @@
      }
     ```
     Now we can react to events.</br></br>
-    Let's say we want to give the variable `para` a new value every time we click the button. Since this is still JavaScript, you can just assign a new value to `para` inside `clickHandler()`:
+    Let's say we want to give the variable `para` a new value when we click the button. Since this is still JavaScript, you can just assign a new value to `para` inside `clickHandler()`:
     ```javascript
     const Button = () => {
       let para = 'Paragraph';
