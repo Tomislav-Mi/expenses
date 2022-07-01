@@ -31,7 +31,7 @@
     ```
     </br>
   - **Event Listening, React State, useState( )**</br>
-    To react to events in React (no pun intended), we go to the JSX element, for instance</br> `<button>Click!</button>`, and there we add a special prop that starts with `on`, for example `onClick`:
+    To react to events in React (no pun intended), we go to a JSX element, let's use </br> `<button>Click!</button>`, and there we add a special prop that starts with `on`, for example `onClick`:
      ```javascript
     const Button = () => {
       let para = 'Paragraph';
