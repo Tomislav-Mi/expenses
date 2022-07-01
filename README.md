@@ -62,7 +62,7 @@
      }
     ```
     Now we can react to events.</br></br>
-    Let's say we want to give the variable `para` an new value every time we click on the button. Since this is still JavaScript, you can just assign a new value to `para` inside `clickHandler()`:
+    Let's say we want to give the variable `para` a new value every time we click the button. Since this is still JavaScript, you can just assign a new value to `para` inside `clickHandler()`:
     ```javascript
     const Button = () => {
       let para = 'Paragraph';
@@ -79,7 +79,7 @@
         );
      }
     ```
-    BUT THAT WON'T WORK! Don't get me wrong, the variable will receive a new value but React won't render it onto the screen. To show the new value, we need to declare a state variable by calling `useState()`, a special React function. As a last step, we need to call `setPara()` with a new value, i.e. `setPara('NEW VALUE')`. The call must, of course, occur in `clickHandler()`.
+    BUT THAT WON'T WORK! Don't get me wrong, the variable will receive a new value but React won't render it onto the screen. To show the new value, we need to declare a state variable by calling `useState()`, a special React function. As a last step, we need to call `setPara()` with a new value inside, i.e. `setPara('NEW VALUE')`. The call must, of course, occur in `clickHandler()`.
      ```javascript
     const Button = () => {
       const [para, setPara] = useState('Paragraph');
@@ -102,6 +102,7 @@
      - Using "keys" and why React needs them
      - Conditional return statements
      - Dynamic styles
+     - useEffect(), a.k.a. how I learned to make infinitives loops in React
       
 <details><summary>The origin of JSX</summary>
 <p>
