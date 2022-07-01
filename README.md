@@ -28,7 +28,17 @@
      }
     ```
   - Event Listening, React State, useState()</br>
-    To react to events in React (no pun intended), we go to the JSX element, for instance `<button>Click!</button>`, and there we add a special prop which start with `on`, for example `onClick`.
+    To react to events in React (no pun intended), we go to the JSX element, for instance `<button>Click!</button>`, and there we add a special prop which start with `on`, for example `onClick`:
+     ```javascript
+    const Button = () => {
+    return (
+      <div>
+        <button onClick={clickHandler}>Click!</button>
+      </div>
+      );
+    }
+    ```
+ 
 <details><summary>The origin of JSX</summary>
 <p>
   
@@ -45,4 +55,4 @@
 - Custom Hooks
 - Rooting etc
 
-[^1]: You can see the transformed code if you want to. Open the dev tools > sources > static/js > bunch of js files.
+[^1]: If you want to, you can see the code that was transformed into pure JS. Open the dev tools > sources > static/js > bunch of js files.
