@@ -31,7 +31,7 @@
     ```
     </br>
   - **Event Listening, React State, useState( )**</br>
-    To react to events in React (no pun intended), we go to the JSX element, for instance</br> `<button>Click!</button>`, and there we add a special prop which start with `on`, for example `onClick`:
+    To react to events in React (no pun intended), we go to the JSX element, for instance</br> `<button>Click!</button>`, and there we add a special prop that starts with `on`, for example `onClick`:
      ```javascript
     const Button = () => {
       let para = 'Paragraph';
@@ -44,7 +44,7 @@
         );
       }
     ```
-    You probably noticed that we assigned a value to this click event, `{clickHandler}`. That's a pointer to a function that we can declare inside the component *before* the function is returned:
+    You probably noticed that I assigned a value to this click event, `{clickHandler}`. That's a pointer to a function that we can declare inside the component *before* the function is returned:
      ```javascript
     const Button = () => {
       let para = 'Paragraph';
@@ -79,7 +79,7 @@
         );
      }
     ```
-    **BUT THAT _WON'T_ WORK!** Don't get me wrong, the variable will receive a new value but React won't render it onto the screen. To show the new value, we need to save the state of the new value we assigned to the variable. `useState()` makes this possible, a special React function. First, we declare a state variable by calling `useState()`. Then, we need to call `setPara()` with a new value inside, i. e. `setPara('NEW VALUE')`. The call must, of course, occur in `clickHandler()`.
+    **BUT THAT _WON'T_ WORK!** Don't get me wrong, the variable will receive a new value but React won't render it onto the screen. To show the new value, we need to save the state of the new value with a special React function, the so-called `useState()`. First, we declare a state variable by calling `useState()`. Then, we need to call `setPara()` with a new value inside, i. e. `setPara('NEW VALUE')`. The call must, of course, occur in `clickHandler()`.
      ```javascript
     const Button = () => {
       const [para, setPara] = useState('Paragraph');
@@ -96,6 +96,7 @@
         );
      }
     ```
+    
    - Other concepts I've learned
      - Rendering lists of data
      - Using stateful lists
