@@ -97,12 +97,12 @@
      }
     ```
    - Other concepts I've learned
-     - Rendering list of data
+     - Rendering lists of data
      - Using stateful lists
      - Using "keys" and why React needs them
      - Conditional return statements
      - Dynamic styles
-     - useEffect(), a.k.a. how I learned to make infinitive loops in React
+     - useEffect( ), a.k.a. how I learned to make infinitive loops in React
       
 <details><summary>The origin of JSX</summary>
 <p>
