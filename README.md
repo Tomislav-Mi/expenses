@@ -14,13 +14,13 @@
     on your own. For example:
     ```javascript
     const para = document.createElement('p');
-    para.textContent = 'This is a paragraph';
+    para.textContent = 'Paragraph';
     document.getElementById('someid').append(para);
     ```
     React favours a declarative approach for building the components: Developer define the desired target state, and React then figures out the actual JavaScript DOM instructions. You essentially build your custom HTML Elements with JavaScript and a special React syntax called JSX that looks like the love child of JavaScript and HTML. To render a paragraph in React, you `return` HTML code inside of a function or class. This only works because there are transformation steps running behind the scenes. Here's a React component:[^1]
     ```javascript
     const Para = () => {
-      let para = 'This is a paragraph';
+      let para = 'Paragraph';
       
       return (
         <div>
@@ -34,7 +34,7 @@
     To react to events in React (no pun intended), we go to the JSX element, for instance</br> `<button>Click!</button>`, and there we add a special prop which start with `on`, for example `onClick`:
      ```javascript
     const Button = () => {
-      let para = 'This is a paragraph';
+      let para = 'Paragraph';
       
       return (
         <div>
@@ -50,7 +50,7 @@
       let para = 'Paragraph';
       
       const clickHandler = () => {
-        return (console.log('Clicked!');
+        console.log('Clicked!');
        } 
     
       return (
@@ -61,8 +61,42 @@
         );
      }
     ```
-    Now we can react to events.
- 
+    Now we can react to events.</br></br>
+    Let's say we want to give the variable `para` an new value every time we click on the button. Since this is still JavaScript, you can just assign a new value to `para` inside `clickHandler()`:
+    ```javascript
+    const Button = () => {
+      let para = 'Paragraph';
+      
+      const clickHandler = () => {
+        para = 'New paragraph';
+       } 
+    
+      return (
+        <div>
+          <p>{para}</p>
+          <button onClick={clickHandler}>Click!</button>
+        </div>
+        );
+     }
+    ```
+    BUT THAT WON'T WORK! Don't get me wrong, the variable will receive a new value but React won't render it onto the screen. To show the new value, we need to declare a state variable by calling `useState()`, a special React function. As a last step, we need to call `setPara()` with a new value, i.e. `setPara('NEW VALUE')`. The call must, of course, occur in `clickHandler()`.
+     ```javascript
+    const Button = () => {
+      const [para, setPara] = useState('Paragraph');
+      
+      const clickHandler = () => {
+        setPara('New paragraph');
+       } 
+    
+      return (
+        <div>
+          <p>{para}</p>
+          <button onClick={clickHandler}>Click!</button>
+        </div>
+        );
+     }
+    
+    
 <details><summary>The origin of JSX</summary>
 <p>
   
