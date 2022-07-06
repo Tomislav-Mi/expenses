@@ -115,7 +115,7 @@ Btw, we don't need to build a wrapper component like that. React already has a b
      - Using "keys" and why React needs them
      - Conditional return statements
      - Dynamic styles
-     - useEffect( ), a.k.a. how I learned to make infinite loops in React
+     - useEffect( ), a.k.a. how I learned to make infinite loops in React. useEffect is a side effect in React. React's main job is to render UI & react to user input. Everything else is considered a side effect, like storing data in the browser storage, sending HTTP requests to backend servers etc.
      - Portal
      - useRef( ) - Refs allow us to get access to other DOM elements and work with them. Should only be used to read a value.
       
