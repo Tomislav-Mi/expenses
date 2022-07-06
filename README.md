@@ -107,6 +107,7 @@ SOLUTION: Build a wrapper component that returns props.children, and replace the
 ```
   - An empty wrapper like that doesn't render any real HTML element to the DOM.
 Btw, we don't need to build a wrapper component like that. React already has a build-in one,`<Fragement>`.
+
     
    - Other concepts I've learned
      - Rendering lists of data
@@ -115,7 +116,8 @@ Btw, we don't need to build a wrapper component like that. React already has a b
      - Conditional return statements
      - Dynamic styles
      - useEffect( ), a.k.a. how I learned to make infinite loops in React
-     - Portals
+     - Portal
+     - useRef( ) - Refs allow us to get access to other DOM elements and work with them. Should only be used to read a value.
       
 <details><summary>The origin of JSX</summary>
 <p>
