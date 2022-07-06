@@ -115,6 +115,7 @@ Btw, we don't need to build a wrapper component like that. React already has a b
      - Conditional return statements
      - Dynamic styles
      - useEffect( ), a.k.a. how I learned to make infinite loops in React
+     - Portals
       
 <details><summary>The origin of JSX</summary>
 <p>
